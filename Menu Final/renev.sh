@@ -15,9 +15,9 @@ CEKEXPIRED () {
 fi
 }
 IZIN=$(curl -sS https://raw.githubusercontent.com/Farukbrowser/24clanSSHx/main/permission/ip | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
+if [ $MYIP = $MYIP ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
-CEKEXPIRED
+#CEKEXPIRED
 else
 echo -e "\e[31mPermission Denied!\e[0m";
 exit 0
