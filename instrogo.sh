@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domain=$(cat /root/domain)
+domain=$(cat domain)
 
 # Install Trojan Go
 latest_version="$(curl -s "https://api.github.com/repos/p4gefau1t/trojan-go/releases" | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
